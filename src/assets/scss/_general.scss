@@ -1,0 +1,321 @@
+::selection {/* UI_enhance 04/2022 */
+    color: $color-dark;
+    background: rgba($color-Primary, 0.5);
+  }
+.flx_bx{
+    @extend %flx-bx;
+    align-items: flex-start;
+}
+
+/*  btn_bx */
+.btn_bx{
+
+    .btn{
+        background: $color-Secondary;
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        padding: 0 15px;
+        margin-inline-start: 8px;
+        @extend %transation;
+
+            & > span{
+                background: $color-white;
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                color: $color-Secondary;
+                margin-inline-end: 10px;
+                display: inline-block;
+                @extend %transation;
+            }
+
+            &:hover{
+                background: $color-Primary;
+                color: $color-dark;
+                @extend %transation;
+            }
+
+            &:hover i, &:hover span{
+                color: $color-dark;
+                background: none;
+                @extend %transation;
+            }
+
+            &.btn2{
+                background: $color-white;
+                border: 1px solid $color-Primary !important;
+                color: $color-Primary;
+                @extend %transation;
+
+                    &:hover{
+                        background: $color-Primary;
+                        color: $color-dark;
+                        @extend %transation;
+                    }
+            }
+    }
+}
+
+/* MODAL POPUP */
+.popup_w60{
+    max-width: 60%;
+}
+
+.modal-dialog {
+
+    *{
+        overflow: visible !important;
+      }
+    
+
+    .modal-header{
+        border-bottom: 0;
+        padding:  28px;
+
+            h1{
+                font-size: 18px;
+                color: $color-dark;
+                font-weight: 400;
+            }
+    }
+
+    .modal-body{
+        background: #F8F8F8;
+
+            .col-12{
+                margin-bottom: 20px;
+            }
+
+            .form-check{
+                height: 56px;
+                @extend %flx-bx;
+                justify-content: flex-start;
+
+                    label{
+                        margin-inline-start: 10px;
+                    }
+            }
+    }
+
+    .modal-footer{
+        padding: 20px;
+        border-top: none;
+
+        .btn{
+            padding: 0 20px;
+            border-radius: 10px;
+            min-width: 120px;
+        }
+    }
+
+     .modal-footer{
+        overflow: hidden !important;
+    }
+    &.modal-dialog-scrollable{
+        height: initial !important;
+    }
+}
+
+    
+/* pagging */
+.pagging_bx{
+
+    .pagination{
+
+        li{
+            margin-inline-start: 18px;
+
+            &:first-child a, &:last-child a{
+                font-size: 25px;
+                color: $color-Primary;
+                padding: 0;
+            }
+
+            &:first-child a{
+
+                i{
+                    margin-inline-end: -20px;
+                }
+            }
+
+            &:last-child a{
+
+                i{
+                    margin-inline-start: -20px;
+                }
+            }
+
+            a{
+                background: $color-white;
+                border-radius: 10px !important;
+                padding: 0 2px;
+                height: 36px;
+                line-height: 36px;
+                min-width: 36px;
+                text-align: center;
+                color: $color-dark;
+                font-size: 14px;
+                @extend %transation;
+
+                    &:hover, &.active{
+                        color: $color-white;
+                        background: $color-Primary;
+                        @extend %transation;
+                    }
+            }
+
+            
+        }
+        
+    }
+}
+
+/* navgation */
+.navbar-toggler{
+    display: none;
+}
+
+.collapse:not(.show) {
+    display: block;
+}
+
+/* check box */
+.form-check{
+
+    .form-check-input{
+        width: 1.2em;
+        height: 1.2em;
+
+            &:checked {
+                background-color: $color-Primary !important;
+                border-color: $color-Primary !important;
+            }
+        }
+
+        label{
+            font-size: 14px;
+            color: $color-dark;
+        }
+}
+
+
+
+/* prime ng */
+.p-autocomplete, .p-calendar{
+    width: 100%;
+}
+
+.p-inputtext{
+    height: 56px;
+    line-height: 56px;
+    padding: 0 10px;
+    border: 1px solid $color-Primary;
+    border-inline-end: 0 !important;
+    border-radius: 4px;
+    color: $color-dark;
+    font-size: 14px;
+    background: #F8F8F8;
+
+        &:hover, &:focus{
+            border: 1px solid $color-Primary !important;
+            border-inline-end: 0 !important;
+            box-shadow: none !important;
+        }
+}
+
+.field {
+
+    .p-float-label >.p-inputtext, .p-calendar .p-inputtext{
+        border-inline-end: 1px solid $color-Primary !important;
+    }
+}
+
+.p-autocomplete-dd .p-autocomplete-dropdown{
+    background: none !important;
+    border: 1px solid $color-Primary !important;
+    border-inline-start: 0 !important;
+
+        span{
+            color: $color-dark;
+        }
+}
+
+.p-inputtextarea{
+    height: 150px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+/* Floating Label */
+.p-inputtext, p-inputmask .p-inputmask, p-inputmask{
+    width: 100%;
+  }
+  .p-float-label_disabled{
+    opacity: 0.3;
+    cursor: no-drop;
+    
+  
+      .p-inputtext{
+        cursor: no-drop;
+      }
+  }
+
+  .p-float-label > label{
+    color: $color-dark;
+    font-size: 14px;
+  }
+ 
+
+.p-float-label input:focus ~ label, .p-float-label input.p-filled ~ label,
+.p-float-label textarea:focus ~ label, .p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label, .p-float-label .p-inputwrapper-filled ~ label{
+  background: $color-white;
+  top: 0.1rem;
+  padding: 0 0.3rem;
+  font-size: 14px;
+  color: $color-Primary;
+}
+
+
+/* uploader_bx */
+.uploader_bx{
+
+    .p-button{
+        background: rgba($color-Primary, 0.1);
+        width: 100%;
+        height: 150px;
+        line-height: 150px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid $color-Primary;
+        color: $color-dark;
+        text-align: center;
+        overflow: hidden;
+
+            &:hover, &:focus{
+                background: rgba($color-Primary, 0.2);
+                border: 1px solid $color-Primary;
+                color: $color-dark;
+            }
+
+            &.p-fileupload-choose{
+                @extend %flx-bx;
+
+                    span{
+                        width: 100%;
+                        flex: auto;
+                        display: block;
+                    }
+            }
+
+            .pi-cloud-upload:before{
+                font-size: 20px;
+            }
+    }
+}

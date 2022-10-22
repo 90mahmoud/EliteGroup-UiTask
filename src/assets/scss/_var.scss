@@ -1,0 +1,50 @@
+
+/* Primary COLORS */
+$color-Primary: #9B945F;
+$color-Secondary: #118755;
+
+/* General COLORS */
+$color-white: #FFFFFF;
+$color-dark: #03140C;
+$color-green: #10D171;
+$color-red: #ff7676;
+
+/* BG COLORS */
+$color-bg1: #EFEFEF;
+$color-bg2: #918A55;
+
+/* GRADIANT */
+%gradiant-color{
+    background-color:#8993bb;
+    background-image: linear-gradient(180deg, #8993bb, #F9FAFF 90%);
+  }
+
+
+
+/* Padding */
+$pad-020: 0 20px;
+
+%innerPage_pad{
+  padding: 40px;
+}
+
+
+
+/* FLEX */
+%flx-bx{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* SHADOW */
+%shadow-color{
+    box-shadow: 0 0 15px -9px #363636;
+}
+
+/* Transation */
+%transation{
+  transition: all 0.3s ease-in-out;
+}

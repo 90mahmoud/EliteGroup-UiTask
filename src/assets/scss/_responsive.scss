@@ -1,0 +1,270 @@
+/* RESPONSIVE */
+@media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1440px) {
+    .popup_w60 {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1024px) {
+    body{
+        height: initial;
+        overflow: auto;
+    }
+    .mainContainer_st{
+        display: grid;
+        height: initial;
+        
+
+            .asideNav_bx{
+                width: initial;
+                height: initial;
+
+                    .logo_bx {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+            }
+
+            .asideNav_pg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                    .logo_bx{
+                        width: 150px;
+                    }
+                    .navbar{
+                        width: calc(100vh - 150px);
+                        flex-grow: 2;
+
+                        .navbar-nav{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: row;
+
+                                li{
+                                    width: calc(100% / 6);
+
+                                        a{
+                                            padding: 10px;
+                                            padding-inline-start: initial;
+                                            padding-inline-end: initial;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-direction: column;
+
+                                                i{
+                                                    margin-inline-end: 0;
+                                                    margin-bottom: 6px;
+                                                }
+                                        }
+                                }
+                        }
+                    }
+            }
+
+            .inner_pg{
+                width: initial;
+                height: initial;
+                overflow-y: initial;
+                padding: 16px 10px;
+            }
+    }
+
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_prev{
+        width: calc(100% - 120px);
+        padding-top: 6px;
+
+            div{
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                margin-top: 6px;
+
+                    ul{
+                        align-items: flex-end;
+                        justify-content: flex-end; 
+                        width: initial;
+                        margin-top: 4px;
+
+                            
+                    }
+            }
+    }
+
+    .popup_w60 {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 27px;
+        left: 16px;
+        color: #9B945F;
+
+            span{
+                color: #9B945F;
+            }
+    }
+    .collapse:not(.show) {
+        display: none;
+    }
+    .navbar{
+        position: initial;
+    }
+    .navbar-collapse{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        z-index: 9;
+        width: initial;
+        background: #fff;
+    }
+
+    .input-group{
+        z-index: -1;
+    }
+
+    .mainContainer_st .asideNav_pg .logo_bx{
+        margin: 8px 0;
+
+            a{
+
+                img{
+                    width: 60%;
+                }
+            }
+    }
+
+    .mainContainer_st .inner_pg .content_bx{
+        width: initial;
+    }
+    .mainContainer_st .inner_pg .notification_bx{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    .mainContainer_st .inner_pg .notification_bx .profile_bx figure{
+        position: absolute;
+        top: 20px;
+        right: 12px;
+        flex-direction: row;
+            margin-bottom: 0;
+
+            span{
+                width: 40px;
+                height: 40px;
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+            }
+
+            figcaption{
+                   padding-inline-start: 8px;
+
+                        h1{
+                            font-size: 15px;
+                        }
+                }
+    }
+
+    .mainContainer_st .inner_pg .notification_bx .notfic_bx {
+        clear: both;
+    }
+
+    .modal-dialog .modal-body {
+    
+        .form-check{
+            flex-wrap: nowrap;
+        }
+        .col-12{
+            width: 100%;
+        }
+    }
+    .mainContainer_st .inner_pg .notification_bx {
+        width: 100%;
+    }
+    .mainContainer_st .inner_pg .content_bx{
+        margin-inline-end: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainContainer_st{
+        display: initial;
+    }
+    
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_no {
+        padding-top: 24px;
+    }
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_prev{
+        padding-bottom: 7px;
+
+        div ul{
+            margin-top: 12px;
+        }
+    }
+
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_prev div ul li a i {
+        font-size: 14px;
+    }
+    
+    .mainContainer_st .asideNav_pg .navbar .navbar-nav{
+        flex-wrap: wrap;
+            li{
+                width: calc(100% / 3) !important;
+            }
+        }
+}
+
+@media (max-width: 480px) {
+    .complaint_pg .content_header {
+       
+        .input-group {
+            width: 100%;
+        }
+
+        .btn_bx{
+            text-align: end;
+            width: 100%;
+
+            .btn{
+                margin-top: 10px;
+            }
+        } 
+    }
+
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_no {
+        width: 100%;
+        padding: 8px !important;
+        border: none;
+        border-bottom: 1px solid #9B945F;
+    }
+    .complaint_pg .complaintList_bx .complaint_container .top_bx .tik_prev div ul {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    
+}

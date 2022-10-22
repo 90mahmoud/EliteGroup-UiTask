@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif !important;
+    background: #EFEFEF;
+    overflow: hidden;
+    height: 100vh;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li, h1, h2, h3, h4, h5, p, span{
+    padding-inline: 0;
+    margin-block: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    list-style: none;
+}
+a, button{
+    cursor: pointer !important;
+    border: none !important;
+  }
+  
+  
+  /* SCROLL_BAR Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c5c1a7 transparent;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #c5c1a7;
+    border-radius: 20px;
+  }
+
+  [dir="ltr"]{
+    direction: ltr;
+    text-align: left;
+  }

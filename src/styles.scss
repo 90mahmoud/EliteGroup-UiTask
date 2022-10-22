@@ -1,0 +1,467 @@
+@import "assets/scss/var";
+@import "assets/scss/reset";
+@import "assets/scss/fonts";
+@import "assets/scss/general";
+
+.mainContainer_st{
+    @extend %flx-bx;
+    justify-content: flex-start;
+    height: 100vh;
+
+        /* asideNav_bx  */
+        .asideNav_bx{
+            width: 253px;
+            background: $color-white;
+            height: 100vh;
+            position: -webkit-sticky;
+            position: sticky;
+
+                .logo_bx{
+                    @extend %flx-bx;
+                    margin-top: 30px;
+                    margin-bottom: 36px;
+                }
+
+                .nav_list{
+
+                    li{
+
+                        a{
+                            @extend %flx-bx;
+                            justify-content: initial;
+                            padding: 17px 10px;
+                            padding-inline-start: 60px;
+                            margin: 2px 0;
+                            color: $color-dark;
+                            font-size: 14px;
+                            @extend %transation;
+
+                            i{
+                                font-size: 24px;
+                                margin-inline-end: 12px;
+                                color: $color-Primary;
+                                @extend %transation;
+                            }
+
+                            i.las{
+                                font-size: 27px;
+                            }
+
+                                &:hover, &.active{
+                                    color: $color-white;
+                                    background: $color-Secondary;
+                                    @extend %transation;
+
+                                        & > i{
+                                            color: $color-white;
+                                            @extend %transation;
+                                        }
+                                }
+
+                                
+                        }
+                    }
+                }
+        }
+
+        /* inner_pg */
+        .inner_pg{
+            width: calc(100% - 253px);
+            padding: 30px 20px;
+            background: url('~/src/assets/images/logo-watermark.png') no-repeat 20% bottom;
+            height: 100vh;
+            overflow-y: scroll;
+
+                        .content_bx {
+                            width: calc(100% - 278px);
+                            margin-inline-end: 18px;
+                        }
+
+                       .notification_bx {
+                            width: 260px;
+                            /* height: calc(100vh - 60px); */
+                            padding: 16px;
+                            background: rgba($color-Primary, 0.1);
+                            border-radius: 10px;
+
+                                .profile_bx{
+
+                                    .settingLink{
+                                        float: right;
+                                        width: 20px;
+                                        @extend %transation;
+
+                                            i{
+                                                font-size: 20px;
+                                                color: $color-Primary;
+                                                @extend %transation;
+                                            }
+
+                                            &:hover i{
+                                                color: $color-Secondary;
+                                                @extend %transation;
+                                            }
+                                    }
+
+                                    figure{
+                                        @extend %flx-bx;
+                                        flex-direction: column;
+                                        clear: both;
+                                        margin-bottom: 60px;
+
+                                            span{
+                                                width: 77px;
+                                                height: 77px;
+                                                border-radius: 50%;
+                                                margin-bottom: 12px;
+                                                overflow: hidden;
+                                                
+                                                    img{
+                                                        width: 77px;
+                                                        height: 77px; 
+                                                    }
+                                            }
+
+                                            figcaption{
+                                                text-align: center;
+
+                                                    h1{
+                                                        font-size: 16px;
+                                                        color: $color-dark;
+                                                        margin-bottom: 4px;
+                                                    }
+                                                    p{
+                                                        font-size: 13px;
+                                                        color: rgba($color-dark, 0.8);
+                                                    }
+                                            }
+                                    }
+                                }
+
+                                .notfic_bx{
+
+                                    .title_bx{
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        background: rgba($color-Primary, 0.1);
+                                        border-radius: 10px;
+                                        margin-bottom: 20px;
+                                        padding: 12px;
+
+                                            h1{
+                                                color: $color-dark;
+                                                font-size: 14px;
+                                                @extend %flx-bx;
+                                                font-weight: 400;
+
+
+                                                    i{
+                                                        margin-inline-end: 8px;
+                                                        font-size: 20px;
+                                                        color: $color-Primary;
+                                                        
+                                                    }
+                                            }
+
+                                            span{
+                                                color: $color-dark;
+                                                background: $color-green;
+                                                border-radius: 6px;
+                                                min-width: 28px;
+                                                height: 26px;
+                                                padding: 2px;
+                                                text-align: center;
+                                            }
+                                    }
+
+                                    .messageList_bx{
+                                       /*  overflow: hidden;
+                                        overflow-y: scroll;
+                                        height: calc(100vh - 376px); */
+
+                                        ul{
+
+                                            li{
+                                                margin-bottom: 12px;
+
+                                                    a{
+                                                        display: block;
+                                                        background: $color-white;
+                                                        border-radius: 10px;
+                                                        padding: 16px;
+                                                        color: $color-dark;
+                                                        
+                                                            p{
+                                                                font-size: 14px;
+                                                                line-height: 20px;
+                                                                margin-bottom: 4px;
+                                                            }
+
+                                                            span{
+                                                                color: rgba($color-dark, 0.8);
+                                                                font-size: 13px;
+                                                                position: relative;
+                                                                padding-inline-start: 17px;
+
+                                                                    &::before{
+                                                                        content: '';
+                                                                        position: absolute;
+                                                                        left: 0;
+                                                                        top: 2px;
+                                                                        width: 12px;
+                                                                        height: 12px;
+                                                                        border-radius: 25px;
+                                                                        background: $color-green;
+                                                                    }
+                                                            }
+                                                    }
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+        }
+}
+
+.complaint_pg{
+
+
+    .content_header{
+        margin-bottom: 18px;
+
+        .flx_bx{
+            justify-content: space-between;
+        }
+
+        .input-group{
+            width: 270px;
+            background: $color-white;
+            height: 48px;
+            border-radius: 10px;
+            padding: 0;
+
+                .form-control{
+                    background: none;
+                    border: none;
+                    padding: 0 10px;
+                    margin: 0;
+                    color: $color-dark;
+                    font-size: 14px;
+
+                        &:focus, &:hover{
+                            box-shadow: none;
+                        }
+                }
+
+                .input-group-text{
+                    background: none;
+                    border-radius: 0;
+                    border: 0;
+                    color: $color-Primary;
+
+                        i{
+                            font-size: 20px;
+                        }
+                }
+        }
+    }
+
+    .complaintList_bx{
+
+    
+        .complaint_container{
+            background: $color-white;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 55px solid $color-red;
+                    border-left: 0px solid transparent;
+                    border-right: 55px solid transparent;
+                }
+
+                &.grayTag_bg{
+
+                    &::after{
+                        border-top: 55px solid rgba($color-Primary, 0.5);
+                    }
+                }
+            
+                & > .pi-flag-fill{
+                    position: absolute;
+                    z-index: 1;
+                    top: 10px;
+                    left: 10px;
+                    color: #fff;
+                    font-size: 16px;
+
+                    
+                }
+
+
+                    .top_bx{
+
+                        .tik_no{
+                            width: 120px;
+                            text-align: center;
+                            padding: 18px;
+                            padding-inline-start: 30px;
+                            border-inline-end: 1px solid $color-Primary;
+
+                                h4{
+                                    font-size: 28px;
+                                    color: $color-dark;
+
+                                        span{
+                                            font-size: 12px;
+                                            color: $color-dark;
+                                            display: block;
+                                        }
+                                }
+                        }
+
+                        .tik_prev{
+                            flex-grow: 2;
+                            padding: 18px;
+
+                                p{
+                                    font-size: 12px;
+                                    color: $color-dark;
+                                    @extend %flx-bx;
+                                    justify-content: flex-start;
+
+                                        i{
+                                            font-size: 20px;
+                                            color: $color-Primary;
+                                            margin: 0 5px;
+                                        }
+                                }
+
+                                div{
+                                    @extend %flx-bx;
+                                    justify-content: space-between;
+                                    margin-top: 10px;
+
+                                        h1{
+                                            color: $color-dark;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                        }
+
+                                        ul{
+                                            @extend %flx-bx;
+
+                                            li{
+                                                margin-inline-start: 10px;
+
+                                                p, a{
+                                                    color: rgba($color-dark, 0.7);
+                                                    font-size: 12px;
+                                                    @extend %flx-bx;
+
+                                                        i{
+                                                            margin-inline-end: 7px;
+                                                            color: $color-Primary;
+                                                            font-size: 20px;
+                                                        }
+                                                }
+
+                                                a:hover{
+                                                    color: $color-Secondary;
+                                                    @extend %transation;
+    
+                                                        i{
+                                                            color: $color-Secondary;
+                                                            @extend %transation;
+                                                        }
+                                                }
+                                            }
+                                        }
+                                }
+                        }
+                    }
+
+                    .bottom_bx{
+                        border-top: 1px solid $color-Primary;
+                        padding: 22px;
+
+                            h3, p{
+                                color: $color-dark;
+                                font-size: 14px;
+                                margin-bottom: 16px;
+                                font-weight: 400;
+                            }
+
+                            p{
+                                font-size: 13px;
+                                line-height: 20px;
+                                margin-bottom: 22px;
+                                font-weight: 300;
+                            }
+
+                            .flx_bx{
+                                justify-content: space-between;
+
+                                    span{
+                                        color: rgba($color-dark, 0.7);
+                                        font-size: 12px;
+                                        @extend %flx-bx;
+
+                                            i{
+                                                color: $color-Primary;
+                                                font-size: 20px;
+                                                margin-inline-end: 6px;
+                                            }
+                                    }
+
+                                    a{
+                                        color: $color-Primary;
+                                        font-size: 12px;
+                                        text-decoration: underline;
+                                        @extend %flx-bx;
+                                        @extend %transation;
+
+                                            i{
+                                                color: $color-Primary;
+                                                font-size: 20px;
+                                                margin-inline-end: 6px;
+                                                @extend %transation;
+                                            }
+
+                                            &:hover{
+                                                color: $color-Secondary;
+                                                @extend %transation;
+
+                                                    i{
+                                                        color: $color-Secondary;
+                                                        @extend %transation;
+                                                    }
+                                            }
+                                    }
+                            }
+                    }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@import "assets/scss/responsive";
+
+
+
+
